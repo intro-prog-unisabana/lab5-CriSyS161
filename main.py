@@ -4,10 +4,10 @@ while ejecutando:
     a = input("Which calculation would you like to perform? (add, subtract, multiply, divide, exponent, modulo, floor_divide, absolute, exit):")
     b = a.lower()
     if "add" == b:
-        respuesta = uc.add(float(input("Enter the firts number:\n")), float(input("Enter the second number:\n")))
+        respuesta = uc.add(float(input("Enter the first number:\n")), float(input("Enter the second number:\n")))
         algo = print("The result is:", respuesta)
     elif "subtract" == b:
-        respuesta = uc.sub(input("Enter the firts number:\n"), input("Enter the second number:\n"))
+        respuesta = uc.sub(float(input("Enter the first number:\n")), float(input("Enter the second number:\n")))
         algo = print("The result is:", respuesta)
     elif "multiply" == b:
         respuesta = uc.multiply(input("Enter the first number:\n"), input("Enter the second number:\n"))
@@ -22,12 +22,11 @@ while ejecutando:
         respuesta = uc.exponent(input("Enter the first number:\n"), input("Enter the second number:\n"))
         algo = print("The result is:", respuesta)
     elif "modulo" == b:
-        respuesta = uc.modulo(float("Enter the first number:\n")), float(input(("Enter the second number:\n")))
-        if type(respuesta) != str:
-            a = print("The result is:", respuesta)
+        respuesta = uc.modulo(float(input("Enter the first number:\n")), float(input("Enter the second number:\n")))
+        if type(respuesta) == str:
+            print(respuesta)
         else:
-            a = respuesta
-            algo = a
+           print("The result is:", respuesta)
     elif "floor_divide"== b:
         respuesta = uc.floor_divide(input("Enter the first number:\n"), input("Enter the second number:\n"))
         algo = print("The result is:", respuesta)
