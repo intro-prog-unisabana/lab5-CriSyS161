@@ -10,16 +10,16 @@ while ejecutando:
         respuesta = uc.sub(float(input("Enter the first number:\n")), float(input("Enter the second number:\n")))
         algo = print("The result is:", respuesta)
     elif "multiply" == b:
-        respuesta = uc.multiply(input("Enter the first number:\n"), input("Enter the second number:\n"))
+        respuesta = uc.multiply(float(input("Enter the first number:\n")), float(input("Enter the second number:\n")))
         algo = print("The result is:", respuesta)
     elif "divide" == b:
-        respuesta = uc.divide(input("Enter the first number:\n"), input("Enter the second number:\n"))
+        respuesta = uc.divide(float(input("Enter the first number:\n")), float(input("Enter the second number:\n")))
         if type(respuesta) == str:
             print(respuesta)
         else:
             print("The result is:", respuesta)
     elif "exponent" == b:
-        respuesta = uc.exponent(input("Enter the first number:\n"), input("Enter the second number:\n"))
+        respuesta = uc.exponent(float(input("Enter the first number:\n")), float(input("Enter the second number:\n")))
         algo = print("The result is:", respuesta)
     elif "modulo" == b:
         respuesta = uc.modulo(float(input("Enter the first number:\n")), float(input("Enter the second number:\n")))
@@ -28,10 +28,10 @@ while ejecutando:
         else:
            print("The result is:", respuesta)
     elif "floor_divide"== b:
-        respuesta = uc.floor_divide(input("Enter the first number:\n"), input("Enter the second number:\n"))
+        respuesta = uc.floor_divide(float(input("Enter the first number:\n")), float(input("Enter the second number:\n")))
         algo = print("The result is:", respuesta)
     elif "absolute" == b:
-        respuesta = uc.absolute(input("Enter the number:\n"))
+        respuesta = uc.absolute(float(input("Enter the number:\n")))
         algo = print("The result is:", respuesta)
     elif "exit" == b:
         ejecutando = False
